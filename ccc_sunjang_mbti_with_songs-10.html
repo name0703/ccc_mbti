@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#315c49">
+<title>나는 어떤 순장일까? | CCC 순장 유형 테스트</title>
+<style>
+:root{--green:#315c49;--deep:#244936;--cream:#fbf8f0;--sage:#e7eee7;--gold:#d6b66d;--ink:#26352f;--muted:#68766d;--line:#e1e8df}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(160deg,#edf3eb,#fbf8f0 58%,#f4ead7);font-family:system-ui,-apple-system,"Noto Sans KR",sans-serif;color:var(--ink);min-height:100vh}.wrap{width:min(760px,100%);margin:auto;padding:22px 15px 44px}.brand{display:flex;align-items:center;gap:9px;color:var(--green);font-weight:850;font-size:13px;letter-spacing:.07em}.mark{display:grid;place-items:center;width:34px;height:34px;border-radius:12px;background:var(--green);color:#fff;font-size:18px}.hero{text-align:center;padding:30px 4px 22px}.eyebrow{color:#92763d;font-size:11px;font-weight:900;letter-spacing:.16em}.hero h1{font-size:clamp(34px,8vw,49px);line-height:1.18;letter-spacing:-.055em;color:var(--deep);margin:12px 0}.hero p{line-height:1.8;color:var(--muted);margin:0}.card{background:rgba(255,255,255,.9);border:1px solid #315c491a;border-radius:25px;padding:clamp(19px,5vw,32px);box-shadow:0 18px 48px #2449360d}.hidden{display:none!important}.art{margin:8px auto 22px;width:112px;height:112px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#fff7d9,#dce8d8 68%);font-size:52px}.primary,.secondary{font:inherit;font-weight:800;border-radius:14px;padding:15px 18px;cursor:pointer}.primary{background:var(--green);color:#fff;border:0;width:100%;box-shadow:0 8px 20px #315c4925}.primary:disabled{opacity:.4;cursor:not-allowed}.secondary{background:#fff;color:var(--green);border:1px solid #d6dfd5}.note{font-size:12px;color:#89938b;text-align:center;line-height:1.7;margin-top:13px}.progress{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;font-weight:800;margin-bottom:12px}.track{height:6px;background:#e9eee8;border-radius:20px;overflow:hidden;margin-bottom:27px}.fill{height:100%;width:0;background:var(--gold);transition:width .2s}.tag{font-size:11px;font-weight:900;letter-spacing:.1em;color:#92763d}.question h2{font-size:clamp(22px,5.3vw,29px);line-height:1.45;letter-spacing:-.035em;margin:9px 0 21px}.answers{display:grid;gap:10px}.answer{display:flex;gap:12px;align-items:flex-start;width:100%;text-align:left;background:#fff;border:1px solid var(--line);border-radius:15px;padding:15px;color:var(--ink);font:inherit;line-height:1.6;cursor:pointer}.answer:hover,.answer.chosen{border-color:#71947d;background:#f2f7f1}.letter{flex:none;display:grid;place-items:center;width:29px;height:29px;background:var(--sage);color:var(--green);border-radius:9px;font-weight:900}.nav{display:flex;gap:10px;justify-content:space-between;margin-top:22px}.nav .primary{width:auto;min-width:125px}.nav .secondary{min-width:90px}.result-head{text-align:center}.emoji{font-size:60px;margin:12px}.type{font-size:12px;letter-spacing:.13em;color:#92763d;font-weight:900}.result-head h2{font-size:clamp(30px,8vw,43px);letter-spacing:-.05em;color:var(--deep);margin:7px 0}.subtitle{line-height:1.7;color:var(--muted)}.pills{display:flex;gap:7px;justify-content:center;flex-wrap:wrap;margin:15px 0}.pill{padding:7px 11px;border-radius:99px;background:#edf3eb;color:var(--green);font-size:12px;font-weight:800}.section{border-top:1px solid #e6ebe3;padding-top:18px;margin-top:20px}.section h3{font-size:16px;margin:0 0 9px}.section p{line-height:1.85;color:#526157;margin:0}.verse{padding:15px;border-radius:14px;background:#f7f2e5;color:#655535;line-height:1.8}.result-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:23px}.result-actions button{width:100%}.all-title{margin:25px 0 12px;font-size:18px}.type-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.type-card{border:1px solid var(--line);background:#fff;border-radius:15px;padding:14px}.type-card .big{font-size:26px}.type-card strong{display:block;margin:5px 0;font-size:14px}.type-card p{margin:0;color:var(--muted);font-size:12px;line-height:1.6}footer{text-align:center;color:#89938b;font-size:12px;line-height:1.7;margin-top:20px}
+@media(max-width:430px){.result-actions{grid-template-columns:1fr}.type-grid{grid-template-columns:1fr 1fr}.card{border-radius:21px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand"><span class="mark">✦</span> CCC · BIBLE LEADERSHIP</div>
+  <header class="hero"><div class="eyebrow">DISCOVER YOUR LEADER STYLE</div><h1>나는 어떤<br>순장일까?</h1><p>8개의 질문에 답하고<br>나와 닮은 순장 유형을 찾아보세요.</p></header>
+  <main>
+    <section class="card" id="intro">
+      <div class="art">📖</div>
+      <h2 style="text-align:center;margin:0 0 9px;font-size:23px">나의 순장 유형 테스트</h2>
+      <p style="text-align:center;color:var(--muted);line-height:1.8;margin:0 0 22px">격려형, 기도형, 리더형부터 12가지 유형까지!<br>나의 강점과 순장 생활 팁도 확인할 수 있어요.</p>
+      <button class="primary" id="start">테스트 시작하기 →</button>
+      <div class="note">약 2분 · 정답은 없어요 · 나의 강점을 발견해 봐요</div>
+    </section>
+    <section class="card hidden" id="quiz">
+      <div class="progress"><span id="step">QUESTION 1 / 8</span><span id="pct">13%</span></div><div class="track"><div class="fill" id="fill"></div></div>
+      <div class="question"><div class="tag" id="qtag">순장 스타일</div><h2 id="qtext"></h2><div class="answers" id="answers"></div></div>
+      <div class="nav"><button class="secondary" id="back">← 이전</button><button class="primary" id="next" disabled>다음 →</button></div>
+    </section>
+    <section class="card hidden" id="result">
+      <div class="result-head"><div class="eyebrow">YOUR CCC LEADER TYPE</div><div class="emoji" id="emoji"></div><div class="type" id="type"></div><h2 id="name"></h2><p class="subtitle" id="subtitle"></p><div class="pills" id="pills"></div></div>
+      <div class="section"><h3>💡 이런 순장이에요</h3><p id="description"></p></div>
+      <div class="section"><h3>💪 나의 강점</h3><p id="strength"></p></div>
+      <div class="section"><h3>🌱 조심하면 좋은 점</h3><p id="caution"></p></div>
+      <div class="section"><h3>🎯 이번 주 순장 미션</h3><p id="mission"></p></div>
+      <div class="section"><h3>📖 함께 묵상할 말씀</h3><div class="verse" id="verse"></div></div>
+      <div class="section"><h3>🎧 이 유형에게 추천하는 찬양</h3><p id="songs"></p><div class="note" style="text-align:left">찬양 제목으로 검색해 들어보세요. 교회·팀마다 익숙한 버전이 다를 수 있어요.</div></div>
+      <p class="note">이 테스트는 재미와 자기 성찰을 위한 콘텐츠예요. 어떤 유형이든 순원들을 사랑하고 함께 성장하는 데 소중한 강점이 있어요.</p>
+      <div class="result-actions"><button class="primary" id="restart">다시 테스트하기</button><button class="secondary" id="share">결과 공유하기</button></div>
+    </section>
+    <h2 class="all-title">12가지 순장 유형 미리 보기</h2>
+    <div class="type-grid" id="typeGrid"></div>
+  </main>
+  <footer>서로 다른 강점으로 함께 세워가는 공동체 ✦</footer>
+</div>
+<script>
+const types={
+barnabas:{name:"바나바형 · 격려왕 순장",short:"격려왕",emoji:"💗",traits:["격려","칭찬","긍정"],description:"순원이 작은 일이라도 해냈을 때 진심으로 칭찬해 주고, 힘들어할 때 다시 해볼 용기를 주는 순장이에요. 순원이 자신의 가능성을 발견하도록 도와줘요.",strength:"따뜻한 말과 진심 어린 응원으로 순원이 자신감을 얻고 공동체 안에서 사랑받고 있다고 느끼게 해요.",caution:"위로만 하다가 꼭 필요한 조언을 놓칠 수 있어요. 때로는 사랑을 담아 솔직한 이야기도 해주세요.",mission:"이번 주 순원 한 명의 장점을 구체적으로 찾아 진심으로 칭찬해 주세요.",verse:"“그가 이르러 하나님의 은혜를 보고 기뻐하여 모든 사람에게 굳건한 마음으로 주와 함께 머물러 있으라 권하니” — 사도행전 11:23",desc:"다른 사람을 격려하고 세워주는 바나바와 닮은 유형",songs:["아무것도 두려워 말라", "하나님의 은혜", "축복의 사람"]},
+daniel:{name:"다니엘형 · 기도 불도저 순장",short:"기도 불도저",emoji:"🙏",traits:["기도","믿음","꾸준함"],description:"순원의 고민을 들으면 함께 기도해 주고, 순모임에서도 기도 제목을 나누며 하나님을 의지하도록 이끌어요.",strength:"순원들이 기도와 말씀을 가까이하도록 돕고, 어려운 때에도 믿음을 놓지 않도록 함께해요.",caution:"기도를 강조하는 동시에 순원이 당장 필요한 현실적인 도움도 살펴주세요.",mission:"순원의 기도 제목 하나를 기억하고 다음 모임에서 어떻게 되었는지 물어보세요.",verse:"“다니엘은 뜻을 정하여” — 다니엘 1:8",desc:"어려운 상황에서도 기도를 이어간 다니엘과 닮은 유형",songs:["기도", "주가 보이신 생명의 길", "나의 안에 거하라"]},
+nehemiah:{name:"느헤미야형 · 추진력 만렙 순장",short:"추진력 만렙",emoji:"🔥",traits:["실행력","계획","리더십"],description:"순모임을 어떻게 진행할지 계획하고, 친목 활동이나 공동체 행사를 적극적으로 준비해요. 생각한 일을 실제 행동으로 옮기는 편이에요.",strength:"목표를 세우고 사람들을 모아 일을 진행하는 능력이 있어요.",caution:"빠르게 진행하다 순원들의 의견을 충분히 듣지 못할 수 있어요. 함께 결정하는 시간을 가져보세요.",mission:"다음 순모임에서 순원들에게 하고 싶은 활동을 한 가지씩 물어보세요.",verse:"“일어나 건축하자 하고 모두 힘을 내어 이 선한 일을 하려 하매” — 느헤미야 2:18",desc:"공동체를 세우는 일을 주도한 느헤미야와 닮은 유형",songs:["우릴 사용하소서", "주님 마음 내게 주소서", "나는 주의 친구"]},
+ruth:{name:"룻형 · 옆자리 지킴이 순장",short:"옆자리 지킴이",emoji:"🌿",traits:["헌신","신뢰","관심"],description:"순원이 힘든 시기를 보내거나 모임에 잘 나오지 못할 때도 쉽게 포기하지 않고 꾸준히 연락하며 곁을 지켜줘요.",strength:"순원에게 안정감과 신뢰를 주고, 말보다 행동으로 사랑을 보여줘요.",caution:"다른 사람을 챙기느라 자신을 지치게 하지 마세요. 모든 일을 혼자 감당할 필요는 없어요.",mission:"순원 한 명에게 부담을 주지 않는 짧은 안부 메시지를 보내보세요.",verse:"“어머니께서 가시는 곳에 나도 가고” — 룻기 1:16",desc:"나오미와 동행하며 사랑을 보여준 룻과 닮은 유형",songs:["주 품에", "하나님의 사랑이", "내 모습 이대로"]},
+moses:{name:"모세형 · 든든한 책임자 순장",short:"든든한 책임자",emoji:"🛡️",traits:["책임감","인내","신뢰"],description:"해야 할 일이 생기면 피하지 않고 맡은 역할을 감당해요. 순원들이 어려움을 겪을 때도 책임감을 가지고 해결 방법을 찾으려 해요.",strength:"사람들이 믿고 의지할 수 있는 든든한 리더예요.",caution:"모든 일을 혼자 해결하려고 하지 마세요. 도움을 요청하고 역할을 나누는 것도 좋은 리더십이에요.",mission:"순모임 준비 중 작은 역할 하나를 순원에게 부탁하고 함께 진행해 보세요.",verse:"“내가 친히 가리라 내가 너를 쉬게 하리라” — 출애굽기 33:14",desc:"이스라엘 백성을 이끌며 책임을 감당한 모세와 닮은 유형",songs:["주님은 산 같아서", "주의 손에 나의 손을 포개고", "나의 힘이 되신 여호와여"]},
+peter:{name:"베드로형 · 열정 폭발 순장",short:"열정 폭발",emoji:"⚡",traits:["열정","용기","적극성"],description:"새로운 활동을 제안하거나 먼저 다가가 말을 걸고, 순원들이 함께 참여하도록 분위기를 이끌어요.",strength:"적극적인 행동으로 공동체에 활력을 불어넣고 새로운 도전을 시작하게 해요.",caution:"의욕이 앞서 충분히 생각하지 않고 결정할 수 있어요. 중요한 일은 순원들의 의견도 확인해 보세요.",mission:"평소 말이 적은 순원에게 먼저 다가가 편하게 대화해 보세요.",verse:"“주여 나를 구원하소서” — 마태복음 14:30",desc:"적극적으로 반응하며 성장한 베드로와 닮은 유형",songs:["나는 주의 친구", "성령이여 임하소서", "주의 이름 높이며"]},
+mary:{name:"마리아형 · 경청 장인 순장",short:"경청 장인",emoji:"👂",traits:["경청","공감","차분함"],description:"순원이 고민을 털어놓을 때 해결책부터 말하기보다 이야기를 끝까지 듣고 마음을 이해하려 해요.",strength:"순원이 부담 없이 자신의 마음을 나누고 진솔한 관계를 쌓도록 도와줘요.",caution:"공감에 집중하다 실제로 필요한 도움을 놓칠 수 있어요. 상대가 원하는 도움을 물어보세요.",mission:"조언하기 전에 “내가 어떻게 도와주면 좋을까?”라고 먼저 물어보세요.",verse:"“마리아는 이 좋은 편을 택하였으니” — 누가복음 10:42",desc:"예수님의 말씀을 가까이에서 들었던 베다니의 마리아와 닮은 유형",songs:["하나님은 너를 지키시는 자", "주 품에", "내 영혼은 안전합니다"]},
+paul:{name:"바울형 · 말씀 전파 순장",short:"말씀 전파",emoji:"📖",traits:["말씀","배움","양육"],description:"성경을 읽고 배운 내용을 순원들과 나누는 것을 좋아해요. 말씀을 일상생활에 어떻게 적용할지 함께 고민해요.",strength:"순원들이 신앙을 이해하고 말씀을 삶에 적용하도록 도와줘요.",caution:"지식을 전달하는 데 집중해 순원의 상황이나 감정을 놓치지 않도록 해요.",mission:"말씀을 나눈 뒤 “이번 주에 어떻게 실천해 볼까?”라고 질문해 보세요.",verse:"“너는 말씀을 전파하라 때를 얻든지 못 얻든지 항상 힘쓰라” — 디모데후서 4:2",desc:"복음을 전하고 교회들을 세운 바울과 닮은 유형",songs:["말씀하시면", "주의 말씀은 내 발의 등이요", "주의 음성을 내가 들으니"]},
+lydia:{name:"루디아형 · 환대 전문 순장",short:"환대 전문",emoji:"🏡",traits:["친화력","환대","세심함"],description:"처음 온 순원에게 먼저 말을 걸고 혼자 있는 사람이 없는지 살펴봐요. 누구나 순모임에서 편안함을 느끼도록 도와줘요.",strength:"새로운 사람이 공동체에 자연스럽게 적응하고 소속감을 느끼도록 해요.",caution:"많은 사람을 챙기느라 깊은 대화를 놓칠 수 있어요. 한 사람과 충분히 이야기하는 시간도 가져보세요.",mission:"새로 온 순원의 이름을 기억하고 다음 모임에서 먼저 인사해 주세요.",verse:"“만일 나를 주 믿는 자로 알거든 내 집에 들어와 유하라” — 사도행전 16:15",desc:"바울 일행을 집으로 초대해 환대한 루디아와 닮은 유형",songs:["축복의 통로", "하나님의 사랑이", "사랑하는 나의 아버지"]},
+david:{name:"다윗형 · 찬양 분위기 메이커 순장",short:"분위기 메이커",emoji:"🎵",traits:["표현력","기쁨","예배"],description:"찬양이나 즐거운 활동으로 순모임 분위기를 밝게 만들어요. 자신의 마음을 솔직하게 표현하고 함께 기뻐하는 것을 좋아해요.",strength:"공동체에 즐거움과 활기를 더하고 예배의 기쁨을 나눠요.",caution:"즐거운 분위기만큼 조용히 나누는 시간도 중요해요. 순원들의 진솔한 이야기도 들어주세요.",mission:"순원들과 함께 듣거나 부르고 싶은 찬양을 한 곡씩 추천해 보세요.",verse:"“내가 전심으로 주께 감사하며” — 시편 138:1",desc:"하나님을 찬양하며 마음을 표현한 다윗과 닮은 유형",songs:["주 이름 큰 능력 있도다", "기뻐하며 왕께 노래 부르리", "주의 이름 높이며"]},
+joseph:{name:"요셉형 · 문제 해결 순장",short:"문제 해결",emoji:"🧩",traits:["지혜","현실 감각","침착함"],description:"순모임에 문제가 생기면 당황하기보다 원인을 살피고 해결 방법을 찾아요. 상황을 차근차근 정리하는 편이에요.",strength:"복잡한 상황을 정리하고 현실적인 대안을 제시해요.",caution:"문제를 해결하는 데 집중하다 순원의 감정을 놓치지 마세요. 해결책을 말하기 전에 마음부터 살펴주세요.",mission:"누군가 고민을 이야기하면 해결책을 제안하기 전에 먼저 마음을 물어보세요.",verse:"“하나님이 나로 하여금 바로에게 말하게 하사” — 창세기 41:16의 주제",desc:"어려운 상황에서 지혜롭게 대처한 요셉과 닮은 유형",songs:["선한 능력으로", "주가 일하시네", "하나님은 너를 지키시는 자"]},
+timothy:{name:"디모데형 · 함께 성장하는 순장",short:"성장형",emoji:"🌱",traits:["겸손","배움","성장"],description:"자신도 아직 배울 것이 많다고 생각해요. 모르는 것은 질문하고 순원들과 함께 신앙적으로 성장하는 과정을 소중히 여겨요.",strength:"겸손하게 배우고 순원들에게도 성장할 수 있다는 용기를 줘요.",caution:"부족하다는 생각 때문에 리더 역할을 지나치게 부담스러워하지 마세요. 순장도 배우며 성장하는 사람이에요.",mission:"순원들과 함께 이번 주에 실천할 작은 말씀 한 가지를 정해보세요.",verse:"“누구든지 네 연소함을 업신여기지 못하게 하고” — 디모데전서 4:12",desc:"바울에게 배우며 복음 사역을 감당한 디모데와 닮은 유형",songs:["내 삶은 주의 것", "주님 마음 내게 주소서", "하나님께서 세상을 사랑하사"]}
+};
+const questions=[
+{tag:"순장 스타일",text:"순원이 요즘 순모임에 잘 나오지 않는다면?",opts:[["먼저 연락해서 힘을 주고 응원한다.","barnabas"],["함께 기도하고 말씀으로 격려한다.","daniel"],["직접 만나 이야기를 나누고 해결 방법을 찾는다.","joseph"],["부담 주지 않게 꾸준히 안부를 묻는다.","ruth"]]},
+{tag:"순모임 분위기",text:"순모임을 준비할 때 나는 보통…",opts:[["재미있는 활동이나 새로운 계획을 준비한다.","nehemiah"],["찬양과 즐거운 분위기를 생각한다.","david"],["말씀과 나눔을 어떻게 진행할지 준비한다.","paul"],["처음 온 사람도 편안하도록 살핀다.","lydia"]]},
+{tag:"친구의 고민",text:"순원이 고민을 털어놓으면 나는…",opts:[["끝까지 듣고 마음을 이해해 준다.","mary"],["함께 기도하고 하나님을 의지하도록 돕는다.","daniel"],["실제로 할 수 있는 해결 방법을 찾아본다.","joseph"],["괜찮다고 격려하고 용기를 준다.","barnabas"]]},
+{tag:"나의 강점",text:"사람들이 나에게 자주 하는 말은?",opts:[["너는 정말 열정적이고 행동이 빨라!","peter"],["너는 책임감이 있고 믿음직해.","moses"],["너는 다른 사람을 잘 챙겨줘.","ruth"],["너와 있으면 편하고 이야기를 잘 들어줘.","mary"]]},
+{tag:"신앙생활",text:"순원들과 함께 가장 하고 싶은 것은?",opts:[["말씀을 깊이 배우고 삶에 적용하기","paul"],["함께 기도 제목을 나누고 기도하기","daniel"],["함께 찬양하고 기쁨을 나누기","david"],["서로 배우며 작은 목표를 실천하기","timothy"]]},
+{tag:"새로운 만남",text:"새로운 순원이 들어오면 나는…",opts:[["먼저 다가가 이름을 묻고 환영한다.","lydia"],["자신감을 가질 수 있도록 칭찬해 준다.","barnabas"],["먼저 말을 걸고 적극적으로 친해진다.","peter"],["천천히 마음을 열 수 있도록 꾸준히 관심을 보인다.","ruth"]]},
+{tag:"문제 상황",text:"순모임에서 예상치 못한 문제가 생기면?",opts:[["차분히 원인을 살피고 해결책을 찾는다.","joseph"],["책임지고 해야 할 일을 정리한다.","moses"],["다른 사람들과 의견을 모아 바로 실행한다.","nehemiah"],["함께 이야기하고 배우며 다음 방법을 찾는다.","timothy"]]},
+{tag:"성장과 양육",text:"좋은 순장이란 어떤 사람이라고 생각해?",opts:[["순원에게 믿음과 용기를 주는 사람","barnabas"],["기도와 말씀으로 함께 하나님을 찾는 사람","daniel"],["맡은 일을 책임지고 공동체를 이끄는 사람","moses"],["자신도 배우며 순원과 함께 성장하는 사람","timothy"]]}
+];
+let idx=0, answers=Array(questions.length).fill(null), lastResult="barnabas";
+const $=id=>document.getElementById(id);
+function show(id){["intro","quiz","result"].forEach(x=>$(x).classList.toggle("hidden",x!==id));}
+function renderQ(){const q=questions[idx];$("step").textContent=`QUESTION ${idx+1} / ${questions.length}`;$("pct").textContent=Math.round((idx+1)/questions.length*100)+"%";$("fill").style.width=((idx+1)/questions.length*100)+"%";$("qtag").textContent=q.tag;$("qtext").textContent=q.text;$("answers").innerHTML="";
+q.opts.forEach((op,j)=>{const b=document.createElement("button");b.className="answer"+(answers[idx]===j?" chosen":"");b.innerHTML=`<span class="letter">${String.fromCharCode(65+j)}</span><span>${op[0]}</span>`;b.onclick=()=>{answers[idx]=j;renderQ()};$("answers").appendChild(b)});$("back").style.visibility=idx===0?"hidden":"visible";$("next").disabled=answers[idx]===null;$("next").textContent=idx===questions.length-1?"결과 확인하기 ✦":"다음 →";}
+function calculate(){const scores={};questions.forEach((q,i)=>{const key=q.opts[answers[i]][1];scores[key]=(scores[key]||0)+1});let max=Math.max(...Object.values(scores));let candidates=Object.keys(scores).filter(k=>scores[k]===max);lastResult=candidates[Math.floor(Math.random()*candidates.length)];renderResult(lastResult);}
+function renderResult(key){const r=types[key];$("emoji").textContent=r.emoji;$("type").textContent="MY CCC LEADER STYLE";$("name").textContent=r.name;$("subtitle").textContent=r.desc;$("pills").innerHTML=r.traits.map(t=>`<span class="pill">${t}</span>`).join("");$("description").textContent=r.description;$("strength").textContent=r.strength;$("caution").textContent=r.caution;$("mission").textContent=r.mission;$("verse").textContent=r.verse;$("songs").textContent=r.songs.map((s,i)=>(i+1)+". "+s).join("  ·  ");show("result");window.scrollTo({top:0,behavior:"smooth"});}
+$("start").onclick=()=>{idx=0;answers=Array(questions.length).fill(null);show("quiz");renderQ();window.scrollTo({top:0,behavior:"smooth"})};
+$("back").onclick=()=>{if(idx>0){idx--;renderQ()}};
+$("next").onclick=()=>{if(answers[idx]===null)return;if(idx<questions.length-1){idx++;renderQ()}else calculate()};
+$("restart").onclick=()=>{idx=0;answers=Array(questions.length).fill(null);show("intro");window.scrollTo({top:0,behavior:"smooth"})};
+$("share").onclick=async()=>{const r=types[lastResult];const msg=`나의 CCC 순장 유형은 ${r.name}!\n${r.desc}\n강점: ${r.traits.join(", ")}\n나도 테스트 해보기: ${location.href}`;try{if(navigator.share)await navigator.share({title:"나는 어떤 순장일까?",text:msg});else if(navigator.clipboard){await navigator.clipboard.writeText(msg);alert("결과 문구를 복사했어요!")}else alert(msg)}catch(e){}};
+$("typeGrid").innerHTML=Object.values(types).map(r=>`<div class="type-card"><div class="big">${r.emoji}</div><strong>${r.name}</strong><p>${r.desc}</p></div>`).join("");
+</script>
+</body>
+</html>
